@@ -5,102 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Professional Portfolio</title>
-  
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 1rem;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .intro {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .skills {
-            margin-top: 2rem;
-        }
-
-        .contact-form {
-            margin-top: 2rem;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-form input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external stylesheet -->
 </head>
 
 <body>
 
     <header>
-        <h1>My Professional Portfolio</h1>
+        <div class="container">
+            <h1>My Professional Portfolio</h1>
+        </div>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
     <div class="container">
-        
-       
         <div id="about">
             <h2>About Me</h2>
             <div class="intro">
                 <p>Hello, I'm Tarek Ahmed Chowdhury, a passionate web developer. I specialize in creating modern and responsive websites.</p>
-                <input type="button" value="DESCOVER NOW">
+                <div class="pic">
+                    <img src="tarek.jpeg" alt="Profile">
+                </div>
             </div>
+            <input type="button" value="DISCOVER NOW">
         </div>
-             <div class="pic">
-                <img src="tarek.jpeg" alt="Profile" width="200" height="200" position="right">
-             </div>
 
         <div id="projects">
             <h2>Projects</h2>
             <p>Check out some of my recent projects:</p>
             <ul>
-                <li><a href="#project1">calculatort</a></li>
+                <li><a href="#project1">Calculator</a></li>
                 <li><a href="#project2">Project 2</a></li>
                 <!-- Add more projects here -->
             </ul>
@@ -121,12 +62,16 @@
             <h2>Contact Me</h2>
             <form>
                 <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
+                <input type="email" placeholder="Your Email">
                 <textarea placeholder="Your Message"></textarea>
                 <input type="submit" value="Send">
             </form>
         </div>
     </div>
+
+</body>
+
+</html>
 
 </body>
 
