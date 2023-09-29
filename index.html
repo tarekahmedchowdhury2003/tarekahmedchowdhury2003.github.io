@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,6 +20,18 @@
             text-align: center;
         }
 
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1rem;
+        }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -32,14 +43,27 @@
             margin-bottom: 1.5rem;
         }
 
-        .social-links {
-            margin-top: 1rem;
+        .skills {
+            margin-top: 2rem;
         }
 
-        .social-links a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 1rem;
+        .contact-form {
+            margin-top: 2rem;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -50,25 +74,50 @@
         <h1>My Professional Portfolio</h1>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <div class="intro">
-            <p>Hello, I'm John Doe, a passionate web developer. I specialize in creating modern and responsive websites.</p>
+        <div id="about">
+            <h2>About Me</h2>
+            <div class="intro">
+                <p>Hello, I'm John Doe, a passionate web developer. I specialize in creating modern and responsive websites.</p>
+            </div>
         </div>
 
-        <h2>Projects</h2>
-        <p>Check out some of my recent projects:</p>
-        <ul>
-            <li><a href="#project1">Project 1</a></li>
-            <li><a href="#project2">Project 2</a></li>
-            <!-- Add more projects here -->
-        </ul>
+        <div id="projects">
+            <h2>Projects</h2>
+            <p>Check out some of my recent projects:</p>
+            <ul>
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <!-- Add more projects here -->
+            </ul>
+        </div>
 
-        <div class="social-links">
-            <h2>Connect with Me</h2>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <!-- Add more social media links here -->
+        <div id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <!-- Add more skills here -->
+            </ul>
+        </div>
+
+        <div id="contact" class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <input type="submit" value="Send">
+            </form>
         </div>
     </div>
 
