@@ -4,163 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
-  
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #5D51D0;
-            color: #fff;
-            padding: 0.1rem;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #372D93;
-            padding: 0.5rem;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 1rem;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .intro {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            display: flex; /* Use flexbox to align items */
-            justify-content: space-between; /* Align items with space in between */
-            align-items: center; /* Center items vertically */
-        }
-
-        .skills {
-            margin-top: 2rem;
-        }
-
-        .contact-form {
-            margin-top: 2rem;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-form input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-        }
-
-        .pic img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%; /* Makes the image circular */
-            margin-right: 2rem;
-            object-position: right; /* Align the image to the right */
-        }
-
-        .btn input {
-            width: 200px;
-            height: 45px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn input:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
-        <h1>My Professional Portfolio</h1>
+        <nav>
+            <div class="container">
+                <h1>Your Name</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        
-        <div id="about">
+    <section id="about" class="section">
+        <div class="container">
             <h2>About Me</h2>
-            <div class="intro">
-                <p>Hello, I'm Tarek Ahmed Chowdhury, a passionate web developer. I specialize in creating modern and responsive websites.</p>
-                <div class="pic">
-                    <img src="tarek.jpeg" alt="Profile">
-                </div>
+            <p>Write a brief introduction about yourself and your skills.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
             </div>
-                <div class="btn">
-                    <input type="button" value="DISCOVER NOW">
-                </div>
-            
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
         </div>
+    </section>
 
-        <div id="projects">
-            <h2>Projects</h2>
-            <p>Check out some of my recent projects:</p>
-            <ul>
-                <li><a href="#project1">Calculator</a></li>
-                <li><a href="#project2">Project 2</a></li>
-                <!-- Add more projects here -->
-            </ul>
-        </div>
-
-        <div id="skills" class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <!-- Add more skills here -->
-            </ul>
-        </div>
-
-        <div id="contact" class="contact-form">
+    <section id="contact" class="section">
+        <div class="container">
             <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <input type="submit" value="Send">
-            </form>
+            <p>Email: yourname@example.com</p>
         </div>
-    </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
+
 
 
 </body>
