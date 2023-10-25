@@ -1,51 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+/* ... (rest of your CSS styles) */
 
-header {
-    background-color: #333;
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 10px 0;
+    text-align: center;
+    padding: 100px 0;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
     color: #fff;
     text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-footer {
+.cta-button:hover {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
