@@ -1,41 +1,94 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background:#081B29;
+  color: #ededed;
 }
 
-/* ... (rest of your CSS styles) */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 
-.hero {
-    background: url('hero-bg.jpg') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 150px 0;
-    animation: fadeIn 1.5s ease;
+
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.logo{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff7f50;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.navbar{
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+
+
+}
+.navbar a:hover,
+.navbar a.active{
+  color: #00abf0;
+
 }
 
-.cta-button:hover {
-    background-color: #333;
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-content{
+  max-width: 600px;
+
+}
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
 }
 
-/* ... (rest of your CSS styles) */
+.home-content p{
+  font-size: 16px;
+
+}
+.home-content .btn-box{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+  
+
+}
+
+.btn-box a{
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081B29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
