@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #444;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #4c6ef5, #3b4eaa);
+    color: #fff;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+}
+
+nav ul li a:hover {
+    color: #4c6ef5;
+}
+
+/* Section Styling */
+.project-1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Flexbox for Image and Video */
+.content {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 2rem; /* Adds space between the image and video */
+    flex-wrap: nowrap; /* Ensures items stay in a single row */
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 2rem; /* Adds space between the image and video */
+    flex-wrap: nowrap; /* Ensures items stay in a single row */
+}
+
+/* Image Styling */
+.image {
+    width: 230px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Styling */
+.video {
+    width: 560px; /* Sets video width */
+    height: 315px; /* Maintains aspect ratio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.down {
+    border-radius: 10px;
+    width: 310px;
+    height: 35px;
+    margin-left: 500px;
+    margin-top: 50px;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.1);
+}

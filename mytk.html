@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylemy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span style="--delay: 0s;">T</span>
+            <span style="--delay: 0.2s;">a</span>
+            <span style="--delay: 0.4s;">r</span>
+            <span style="--delay: 0.6s;">e</span>
+            <span style="--delay: 0.8s;">k</span>
+            <span style="--delay: 1s;">c</span>
+            <span style="--delay: 1.2s;">h</span>
+            <span style="--delay: 1.4s;">Y.</span>
+        </div>
+        <ul>
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/tarek-chowdhury-b94960262/"><img src="linkedin (1) 1.png" alt="" height="25" width="25"> LinkedIn</a></li>
+            <li><a href="https://github.com/tarekahmedchowdhury2003?tab=repositories"><img src="Group 4 (1).png" alt="" height="25" width="25"> GitHub</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about" class="about">
+        <div class="about-text">
+            <h3>Hello, I am</h3>
+            <h2>TAREK CHOWDHURY</h2>
+            <h3>App Developer</h3>
+            <a href="Tarek_AhmedChowdhury_Resume.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="top-right-image">
+            <img src="tkkk.png" alt="Profile Picture">
+        </div>
+    </section>
+    
+    <section id="ab" class="ab">
+        <h2>About Me</h2>
+        <div class="ablogo">
+            <img src="fotor-20250115155712.png" alt="About Me Logo">
+        </div>
+        <div class="te">
+            <p>I'm a passionate, self-proclaimed designer who specializes 
+                in full stack development (React.js & Node.js). 
+                I am very enthusiastic about bringing the technical and 
+                visual aspects of digital products to life. 
+                User experience, pixel perfect design, and writing clear, 
+                readable, highly performant code matters to me.</p>
+
+                <p>I began my journey as a web developer in 2015, and since then, 
+                I've continued to grow and evolve as a developer,
+                taking on new challenges and learning the latest technologies along the way.
+                Now, in my early thirties, 7 years after starting my web development journey, 
+                I'm building cutting-edge web applications using modern technologies 
+                such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
+
+                <p>I am very much a progressive thinker and enjoy working on
+                 products end to end, from ideation all the way to development.
+                When I'm not in full-on developer mode, you can find me hovering 
+                around on twitter or on indie hacker, witnessing the journey of 
+                early startups or enjoying some free time. You can follow me on 
+                Twitter where I share tech-related bites and build in public, 
+                or you can follow me on GitHub.</p>
+
+                <p>Finally, some quick bits about me.</p>
+
+                <p>B.E. in Computer Engineering
+                Avid learner
+                Full time freelancer
+                Aspiring indie hacker
+                One last thing, I'm available for freelance work, so feel free 
+                to reach out and say hello! I promise I don't bite 😉</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="c-.png" alt="C++">
+            <img src="letter-c.png" alt="C">
+            <img src="java.png" alt="Java">
+            <img src="html5-original 1.png" alt="HTML5">
+            <img src="python-original 1.png" alt="Python">
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4" space-between="30" centered-slides="true">
+            <swiper-slide>
+                <div class="project" onclick="location.href='percentagecalculator.html';">
+                    <img src="rsz_1perr.jpg" alt="Percentage Calculator">
+                    <h3>Percentage Calculator App</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="project">
+                    <img src="rsz_kid.jpg" alt="Kid Learning App">
+                    <h3>Kid Learning App</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="project">
+                    <img src="rsz_light.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="contact-section">
+            <div class="contact-info">
+                <p>Let's Make Something new, different, and great together.</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +88017********34</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Sylhet, Bangladesh</li>
+                    <li><i class="fas fa-envelope"></i> tarekchy569@gmail.com</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-fiverr"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">SEND NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+      
+    
+    <footer>
+        <p>&copy; 2025 TarekChy. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>
